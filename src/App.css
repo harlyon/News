@@ -1,32 +1,125 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-image: url("http://images.pond5.com/abstract-circle-round-news-background-footage-059873171_prevstill.jpeg");
+  height: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news_buttons {
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
+.news__box {
+  background: #fff;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: -1px 2px 34px -13px rgba(0, 0, 0, 0.75);
+  text-align: left;
+  overflow: hidden;
+}
+
+.news__text {
+  margin-left: 15px;
+}
+
+.news__title {
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0;
+}
+
+.news__subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.news__subtitle span {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+img {
+  width: 100%;
+  height: 220px;
+}
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
   text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog-footer p:last-child {
+  margin-bottom: 0;
 }
