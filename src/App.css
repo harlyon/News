@@ -10,6 +10,11 @@ a {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+  margin-right: 12px;
+}
+
+a:hover {
+  color: #000;
 }
 
 .jumbotron {

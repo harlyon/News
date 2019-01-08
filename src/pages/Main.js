@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import noimage from './../image/noImage';
+import Header from '../components/Header'
+import Navba from '../components/Navba'
 
 class Main extends Component {
 
@@ -19,6 +21,8 @@ class Main extends Component {
   render() {
     return (
              <div>
+               <Navba />
+                   <Header />
                 <div className="container">
                   <div className="row">
                     {
