@@ -7,13 +7,14 @@ import Navba from '../components/Navba'
 class Main extends Component {
 
   state = {
-    articles: []
+    articles: [],
+    loading: true
   }
 
   componentDidMount() {
     axios.get(`https://newsapi.org/v2/${this.props.articles.type}?${this.props.articles.query}&apiKey=a391fff851774b5d8804cf3027c4b8e8&pageSize=12`)
     .then(res=> {
-    this.setState({ articles: res.data.articles })
+    this.setState({ articles: res.data.articles, loading: false })
     // console.log(res.data);
     })
   }

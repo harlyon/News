@@ -7,8 +7,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink } from 'reactstrap';
+  NavItem } from 'reactstrap';
 
 
 class Navba extends Component {
