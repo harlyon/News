@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import noimage from "./../image/noImage";
 import Header from "../components/Header";
 import Navba from "../components/Navba";
@@ -58,15 +59,14 @@ class Main extends Component {
                           Author: <span>{item.author}</span>
                         </p>
                       </div>
-                      <button className="news_buttons">
-                        <a
-                          href={item.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Read More
-                        </a>
-                      </button>
+                      <a
+                        className="news_buttons"
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Read More
+                      </a>
                     </div>
                   </div>
                 );
