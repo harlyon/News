@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import noimage from "./../image/noImage";
 import Header from "../components/Header";
 import Navba from "../components/Navba";
@@ -20,7 +19,6 @@ class Main extends Component {
       )
       .then(res => {
         this.setState({ articles: res.data.articles, loading: false });
-        // console.log(res.data);
       });
   }
 
